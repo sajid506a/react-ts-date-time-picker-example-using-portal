@@ -4,28 +4,28 @@ import './style.css';
 function Example() {
   const [value, setValue] = React.useState(new Date());
 
-  return(
+  return (
     <div
-    style={{
-      position: "fixed",
-      overflow: "auto",
-      display: "flex",
-      justifyContent: "space-around",
-      height: "200px",
-      maxWidth: "500px",
-      backgroundColor: "lightgray",
-      borderRadius: "5px",
-    }}
-  >
-    <div>
-      <h5>Default:</h5>
-      <DatePicker />
+      style={{
+        position: 'fixed',
+        overflow: 'auto',
+        display: 'flex',
+        justifyContent: 'space-around',
+        height: '200px',
+        maxWidth: '600px',
+        backgroundColor: 'lightgray',
+        borderRadius: '5px',
+      }}
+    >
+      <div>
+        <h5>Default:</h5>
+        <DatePicker />
+      </div>
+      <div>
+        <h5>Portal:</h5>
+        <DatePicker multiple portal />
+      </div>
     </div>
-    <div>
-      <h5>Portal:</h5>
-      <DatePicker multiple portal  />
-    </div>
-  </div>
   );
 }
 export default function App() {
